@@ -1,0 +1,5 @@
+
+.. note::
+
+    All the BLE commands exposed on this API require PTLS session.
+    You can find a guide to achieve that on :doc:`/ptls` page.

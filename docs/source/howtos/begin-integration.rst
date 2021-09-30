@@ -1,0 +1,23 @@
+How to begin integration
+========================
+
+All the commands exposed on this BLE API require PTLS session.
+You can find a guide to achieve that on :doc:`establish-ptls-session` page.
+
+Tutorial
+------------
+
+To learn step by step how to integrate with tedee, please follow these tutorials:
+
+* :doc:`Find Tedee Lock <find-tedee-lock>`
+* :doc:`Establish PTLS session <establish-ptls-session>`
+* :doc:`Lock calibration <lock-calibration>`
+* :doc:`Lock operations <lock-operations>`
+
+More information
+----------------
+
+If you need more information about integration please check following links:
+
+* You can use our logo but first read the :doc:`logo guidance <../../logo-guidance>`
+* Use `community forum <https://tedee.freshdesk.com/en/support/discussions>`_ if you need help
