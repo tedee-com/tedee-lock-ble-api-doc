@@ -34,8 +34,8 @@ Tedee Lock BLE API documentation
 
    Basics <ble/basics>
    Advertisement <ble/advertisement>
-   Characteristics <ble/characteristics>
    Services <ble/services>
+   Characteristics <ble/characteristics>
 
 .. toctree::
    :maxdepth: 1
