@@ -32,6 +32,7 @@ Tedee Lock BLE API documentation
    :caption: BLE
    :hidden:
 
+   Basics <ble/basics>
    Advertisement <ble/advertisement>
    Characteristics <ble/characteristics>
    Services <ble/services>
