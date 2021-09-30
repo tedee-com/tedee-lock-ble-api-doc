@@ -7,3 +7,10 @@ Requirements
 ------------
 
 - BLE 5.0
+
+Preferred Connection Parameters
+-------------------------------
+
+- MTU size should be as much as possible ideally **247 bytes**.
+- Connection interval set in range **7.5ms - 60ms**.
+- Supervision timeout **4s**.
