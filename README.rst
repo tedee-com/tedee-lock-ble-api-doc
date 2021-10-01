@@ -1,0 +1,95 @@
+=======================
+Tedee Lock BLE API documentation
+=======================
+
+Overview
+========
+
+This repository contains a documentation of the Tedee Lock BLE API. It aims to help users to integrate directly with the lock via BLE API.
+
+Visit our website `tedee.com <https://tedee.com>`_.
+
+Contribution
+============
+
+If you think that there are some areas that should be improved or extended please let us know by creating an `Issue <https://github.com/tedee-com/tedee-lock-ble-api-doc/issues>`_.
+However, we also highly encourage you to contribute to this repo, wheather you want to add some description, guide or provide a sample code.
+
+Documentation specification
+---------------------------
+
+The documentation is:
+
+- Written in `RST markup <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_
+- Generated using `Sphinx <https://www.sphinx-doc.org/en/master/>`_
+- Hosted on `ReadTheDocs <https://readthedocs.org/>`_
+
+How to start
+------------
+
+Prepare the infrastructure
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+| To start working on this documentation you will have to install required components.
+  It's well described in `ReadTheDocs documentation <https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html>`_.
+| However, here's a quick list of what needs to be done:
+
+* Install `Python <https://www.python.org/downloads/>`_
+
+    .. note::
+        In the Python installation wizard check the "Add Python to environment variables" option
+
+* Install `Sphinx <https://www.sphinx-doc.org/en/master/>`_
+
+    .. code-block:: py
+
+        pip install sphinx
+
+Prepare your environment
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+We find the `Visual Studio Code <https://code.visualstudio.com/>`_ to be a great IDE to work on this documentation and we configure some automation for it.
+Since it's written in **RST** markup, we recommend to install `RST Preview <https://marketplace.visualstudio.com/items?itemName=tht13.rst-vscode>`_ extension
+to highlight the syntax. It also allows you to immediately preview the document in the IDE using ``ctrl+shiht+v`` combination or ``ctrl+k v`` to  open preview to the side.
+
+Regardles of IDE used, please do following:
+
+#. Clone the repository
+#. Install all required dependencies from ``\docs\requirements.txt`` file.
+
+    .. code-block:: py
+
+        pip install -r requirements.txt
+
+
+Build and test
+^^^^^^^^^^^^^^
+
+| Once you install all the required components, setup the environment and clone the repo, you're ready to make some changes.
+  As it was mentioned earlier you can preview your changes in the IDE. However, to get the full documentaion running locally, you'll have to generate it.
+
+To build the documentation:
+
+#. If you use `Visual Studio Code` run the build task (`ctrl+shiht+b`)
+#. OR if you use terminal then go to ``docs`` directory and executing this command
+
+    .. code-block:: py
+
+        .\make.bat html
+
+#. After a while you should get the ``_build`` folder created where you can find there ``html`` catalog with ``index.html`` file inside. Open it.
+
+| Sometimes you may notice that after building, the files won't get updated.
+  In such case we recommand to run ``make clean`` command or just remove ``_build`` catalog and try again.
+
+Pushing changes
+^^^^^^^^^^^^^^^
+
+Please make your changes in feature branches starting from master branch, using naming convention presented below:
+
+* use only lower case
+* do not use whitespaces
+* do not use any special characters except: -/
+* `feature/[feature-description]` - to implement new features, eg. `feature/authenticate-module`
+* `fix/[bug-description]` - to fix bugs, eg. `fix/incorect-link`
+
+Once the changes are done and tested you are ready to create a pull request.

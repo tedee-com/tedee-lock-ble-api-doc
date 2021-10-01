@@ -1,0 +1,17 @@
+BLE basics
+==========
+
+To communicate with our lock you need device that support wireless BLE connectivity.
+
+Requirements
+------------
+
+- BLE 5.0
+
+Preferred Connection Parameters
+-------------------------------
+
+- MTU size should be as much as possible ideally **247 bytes**.
+- Connection interval set in range **7.5ms - 60ms**.
+- Slave latency **0**
+- Supervision timeout **4s**.
