@@ -15,3 +15,6 @@ Preferred Connection Parameters
 - Connection interval set in range **7.5ms - 60ms**.
 - Slave latency **0**
 - Supervision timeout **4s**.
+
+| Lock communicates using **1Mbps** physical layer.
+| Lock allows of 3 simultaneous BLE connections.
