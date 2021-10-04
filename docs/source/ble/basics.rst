@@ -16,5 +16,5 @@ Preferred Connection Parameters
 - Slave latency **0**
 - Supervision timeout **4s**.
 
-Lock communicates using **1Mbps** physical layer.
-Lock allows of 3 simultaneous BLE connections.
+| Lock communicates using **1Mbps** physical layer.
+| Lock allows of 3 simultaneous BLE connections.

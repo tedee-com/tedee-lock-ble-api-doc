@@ -1,11 +1,11 @@
 Tedee lock BLE characteristics
 ==============================
 
-Main service **00000002-4899-489f-a301-fbee544b1db0** contains following characteristics:
+Main Tedee Lock's service contains following characteristics:
 
 #. **00000101-4899-489f-a301-fbee544b1db0**
 
-    Characteristic used for notifying device connected to lock about specific infos described in section Notifications.
+    Characteristic used for notifying device connected to lock about specific infos described in section **Notifications**.
 
 #. **00000201-4899-489f-a301-fbee544b1db0**
 
@@ -21,7 +21,7 @@ Main service **00000002-4899-489f-a301-fbee544b1db0** contains following charact
 
 #. **00000501-4899-489f-a301-fbee544b1db0**
 
-    Used for API commands send to lock and described in section Commands.
+    Used for API commands send to lock and described in section **Commands**.
 
 #. **00000601-4899-489f-a301-fbee544b1db0**
 
