@@ -18,3 +18,8 @@ Preferred Connection Parameters
 
 | Lock communicates using **1Mbps** physical layer.
 | Lock allows of 3 simultaneous BLE connections.
+
+.. note::
+
+    - When the connection is established (open Bluetooth communication), the Tedee lock does not send any information (it does not start transmitting any data, including notifications).
+    - Connected device should initiate the PTLS session by sending "hello" message.

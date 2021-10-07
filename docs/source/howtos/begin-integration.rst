@@ -3,6 +3,11 @@ How to begin integration
 
 All the commands exposed on this BLE API require PTLS session.
 You can find a guide to achieve that on :doc:`establish-ptls-session` page.
+As security library we recommend using:
+
+- C language `MbedTLS <https://github.com/ARMmbed/mbedtls>`_,
+- iOS **CryptoSwift** and native Apple framework **Security** for keys management,
+- Java **javax.crypto** and **java.security**.
 
 Tutorial
 ------------
