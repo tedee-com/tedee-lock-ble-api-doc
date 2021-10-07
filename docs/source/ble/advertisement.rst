@@ -10,9 +10,10 @@ Each packet contains 31 bytes together with BLE headers.
 Main advertising packet
 ------------------------------
 
-Main packet consist of two unique UUID's of our services:
+Main packet consist unique UUID of our devices:
 
-    Fake service UUID that specifies particular Tedee Lock 
+    :ref:`serial_number_service` UUID that specifies particular Tedee Lock 
+
          *xxxx0000-xxxx-xxxx-xx00-000000000000*
 
     where each **x** is a digit from serial number of particular lock.
@@ -21,8 +22,11 @@ Scan response packet
 --------------------
 
 Scan response packet consist of:
-    1. Service UUID that's the same for all Tedee Lock's
+
+    1. :ref:`tedee_lock_service` UUID that's the same for all Tedee Lock's
+
         *00000002-4899-489f-a301-fbee544b1db0*
+        
     #. Lock name in following format:
         Lock-**YYZZ**
 

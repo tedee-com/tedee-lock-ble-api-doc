@@ -36,6 +36,7 @@ Tedee Lock BLE API documentation
    Advertisement <ble/advertisement>
    Services <ble/services>
    Characteristics <ble/characteristics>
+   Message format <ble/message_frame>
 
 .. toctree::
    :maxdepth: 1
@@ -44,6 +45,11 @@ Tedee Lock BLE API documentation
    :hidden:
 
    Basics <ptls/basics>
+   Hash calculation <ptls/hash_calculation>
+   Hello messages <ptls/hello_handshake>
+   Server verification <ptls/server_verification>
+   Client verification <ptls/client_verification>
+   Secured communication <ptls/secured_communication>
 
 .. toctree::
    :maxdepth: 1
@@ -51,6 +57,7 @@ Tedee Lock BLE API documentation
    :caption: Commands
    :hidden:
 
+   commands/security/index
    commands/battery/index
    commands/calibration/index
    commands/operations/index

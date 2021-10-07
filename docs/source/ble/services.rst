@@ -1,6 +1,8 @@
 Tedee lock BLE services
 ========================
 
+.. _tedee_lock_service:
+
 Tedee Lock's service
 --------------------
 
@@ -8,6 +10,8 @@ Tedee Lock's service
 
     It's the most important service which contains all characteristics for direct communication with lock.
     In that service you find characteristics needed for establishing PTLS session as well as for communication after that.
+
+.. _serial_number_service:
 
 Serial Number service
 ---------------------
