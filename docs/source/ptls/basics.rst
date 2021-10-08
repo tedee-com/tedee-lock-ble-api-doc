@@ -24,7 +24,7 @@ During session establishment, the "client side" sends an permission certificate.
 The permissions contained in the certificate and its signature are verified by the Tedee Lock. 
 It is not possible to establish PTLS session if permissions are not successfully verified or if any session establishment steps failed.
 Establishment of a PTLS session requires setup of the date and time from a trusted source (`Tedee API <https://api.tedee.com/>`_). 
-This should be done using the **API command (SET_SIGNED_DATETIME)** or by handling the specific error code returned when establishing the session. 
+This should be done using the API command (:doc:`SET_SIGNED_DATETIME <../commands/security/set-signed-time>`) or by handling the specific error code returned when establishing the session. 
 The error codes are listed below.
 
 Algorithms used
@@ -54,24 +54,24 @@ For every step should be used two characteristics: :ref:`ptls_tx_characteristic`
 PTLS error codes
 ----------------
 
-+----------------------------+-------+-----------------------------------------------------------------------------------------------------+
-| Name                       | Value | Description                                                                                         |
-+----------------------------+-------+-----------------------------------------------------------------------------------------------------+
-| ALERT_CODE_OK              | 0x00  | No error                                                                                            |
-+----------------------------+-------+-----------------------------------------------------------------------------------------------------+
-| ALERT_CODE_ERROR           | 0x01  | | Indicates one of many errors that may occur when establishing the session.                        |
-|                            |       | | It does not specify its exact location or cause for the security reasons.                         |
-+----------------------------+-------+-----------------------------------------------------------------------------------------------------+
-| ALERT_CODE_NO_TRUSTED_TIME | 0x02  | | No trusted date and time.                                                                         |
-|                            |       | | Time should be set via API command (**SET_SIGNED_DATETIME**)                                      |
-+----------------------------+-------+-----------------------------------------------------------------------------------------------------+
-| ALERT_CODE_TIMEOUT         | 0x03  | Session has expired due to session timeout (**24h**)                                                |
-+----------------------------+-------+-----------------------------------------------------------------------------------------------------+
-| ALERT_CODE_DISCONNECTED    | 0x04  | Communication side disconnected (Bluetooth connection closed)                                       |
-+----------------------------+-------+-----------------------------------------------------------------------------------------------------+
-| ALERT_CODE_INVALID_CERT    | 0x05  | | Invalid certificate.                                                                              |
-|                            |       | | It applies to any problem with the certificate (expired, no permissions, invalid signature, etc.) |
-+----------------------------+-------+-----------------------------------------------------------------------------------------------------+
-| ALERT_CODE_NOT_REGISTERED  | 0x06  | | Indicates the situation where device is still linked with the account but has been manually reset |
-|                            |       | | to factory defaults (unregistered). In such case device has no keys to establish PTLS session.    |
-+----------------------------+-------+-----------------------------------------------------------------------------------------------------+
++----------------------------+-------+----------------------------------------------------------------------------------------------------------+
+| Name                       | Value | Description                                                                                              |
++----------------------------+-------+----------------------------------------------------------------------------------------------------------+
+| ALERT_CODE_OK              | 0x00  | No error                                                                                                 |
++----------------------------+-------+----------------------------------------------------------------------------------------------------------+
+| ALERT_CODE_ERROR           | 0x01  | | Indicates one of many errors that may occur when establishing the session.                             |
+|                            |       | | It does not specify its exact location or cause for the security reasons.                              |
++----------------------------+-------+----------------------------------------------------------------------------------------------------------+
+| ALERT_CODE_NO_TRUSTED_TIME | 0x02  | | No trusted date and time.                                                                              |
+|                            |       | | Time should be set via API command (:doc:`SET_SIGNED_DATETIME <../commands/security/set-signed-time>`) |
++----------------------------+-------+----------------------------------------------------------------------------------------------------------+
+| ALERT_CODE_TIMEOUT         | 0x03  | Session has expired due to session timeout (**24h**)                                                     |
++----------------------------+-------+----------------------------------------------------------------------------------------------------------+
+| ALERT_CODE_DISCONNECTED    | 0x04  | Communication side disconnected (Bluetooth connection closed)                                            |
++----------------------------+-------+----------------------------------------------------------------------------------------------------------+
+| ALERT_CODE_INVALID_CERT    | 0x05  | | Invalid certificate.                                                                                   |
+|                            |       | | It applies to any problem with the certificate (expired, no permissions, invalid signature, etc.)      |
++----------------------------+-------+----------------------------------------------------------------------------------------------------------+
+| ALERT_CODE_NOT_REGISTERED  | 0x06  | | Indicates the situation where device is still linked with the account but has been manually reset      |
+|                            |       | | to factory defaults (unregistered). In such case device has no keys to establish PTLS session.         |
++----------------------------+-------+----------------------------------------------------------------------------------------------------------+
