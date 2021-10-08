@@ -14,7 +14,7 @@ SET_SIGNED_DATETIME code 0x71
 | 8 bytes  | Signature_len |
 +----------+---------------+
 
-3. :doc:`Encrypt <../../ptls/secured_communication>` and send on :ref:`api_commands_characteristic`.
+3. Send on :ref:`api_commands_characteristic` with :doc:`unencrypted header <../../ble/message_frame>`.
 
 Possible results:
 
