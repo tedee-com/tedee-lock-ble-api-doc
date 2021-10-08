@@ -26,6 +26,8 @@ Server side is a Tedee lock.
 | (0x05) 1 byte   | 8 bytes              |
 +-----------------+----------------------+
 
+.. _server_response:
+
 2. Server response
 ------------------
 
@@ -50,4 +52,10 @@ Server side is a Tedee lock.
     #. Check if hash in decrypted message is the same as after last hello message (:ref:`client_hello_final`).
     #. Verify compliance of the verification data (*auth data*).
     #. Verify signature from hash in 2. point of :ref:`client_challange_server_verify` using *server* public key (got from (`Tedee API <https://api.tedee.com/>`_)).
-    #. :doc:`Calculate hash <hash_calculation>`.
+    #. :doc:`Calculate hash <hash_calculation>` from:
+    
++--------+---------------+---------------+--------+---------------------+------------+
+| 0x00   | Signature_len | Signature     | 0x00   | Hello_hash_len 0x20 | Hello_hash |
++--------+---------------+---------------+--------+---------------------+------------+
+| 1 byte | 1 byte        | signature_len | 1 byte | 1 byte              | 32 bytes   |
++--------+---------------+---------------+--------+---------------------+------------+
