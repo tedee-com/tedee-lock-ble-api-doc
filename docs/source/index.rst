@@ -23,7 +23,6 @@ Tedee Lock BLE API documentation
    Begin integration <howtos/begin-integration>
    Find Tedee Lock <howtos/find-tedee-lock>
    Establish PTLS session <howtos/establish-ptls-session>
-   Lock calibration <howtos/lock-calibration>
    Lock operations <howtos/lock-operations>
 
 .. toctree::
