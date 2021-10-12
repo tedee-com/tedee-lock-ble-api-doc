@@ -12,7 +12,7 @@ param[0]: if not attached to command then default value is **NONE**.
 +----------------+-----------+----------------------------------------------+
 | **Param name** | **Value** | **Description**                              |
 +----------------+-----------+----------------------------------------------+
-| NONE           | 0x00      | Close lock                                  |
+| NONE           | 0x00      | Close lock                                   |
 +----------------+-----------+----------------------------------------------+
 | FORCE          | 0x02      | | Forces lock to close lock till jamm.       |
 |                |           | | **Should be used only in emergency case**. |
