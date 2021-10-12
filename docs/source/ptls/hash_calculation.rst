@@ -1,7 +1,7 @@
 Hash calculation
 ================
 
-For hash calculation during PTLS session establishement we are using **SHA256**.
+For hash calculation during PTLS session establishement is used **SHA256**.
 
 Every time hash calculation is mentioned it means:
 
