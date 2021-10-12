@@ -41,8 +41,7 @@ Result
 | ALREADY_CALLED_BY_OTHER_OPERATION        | 0x0A      | | Last unlock operation was different than auto unlock                  |
 |                                          |           | | and it happened < 3min (current lock state does not matter).          |
 +------------------------------------------+-----------+-------------------------------------------------------------------------+
-| NOT_CONFIGURED                           | 0x08      | | Last unlock operation happened > 3min and lock is in the unlock state | 
-|                                          |           | | and lock have not enabled auto pull spring (open with pull spring).   |
+| NOT_CONFIGURED                           | 0x08      | Lock auto pull spring feature is turned off.                            |
 +------------------------------------------+-----------+-------------------------------------------------------------------------+
 | DISMOUNTED                               | 0x09      | Lock is not mounted on doors.                                           |
 +------------------------------------------+-----------+-------------------------------------------------------------------------+
