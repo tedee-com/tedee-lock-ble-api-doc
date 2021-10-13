@@ -16,6 +16,8 @@ You can perform following actions on lock:
 | 2. Using :doc:`Lock close command <../commands/operations/lock-close>` you are able to unlock your lock.
 | 3. Using :doc:`Pull spring command <../commands/operations/pull-spring>` you are able to pull the spring from unlocked lock.
 
+When you formed command to be send then :doc:`encrypt <../ptls/secured_communication>` and send on :ref:`API commands characteristic <api_commands_characteristic>`.
+
 Each action can be performed only in specific lock states. Here is Lock state diagram:
 
 .. image:: ../images/lock-states-diagram.png
