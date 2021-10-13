@@ -6,6 +6,8 @@ The frame consists of a header and data.
 The header is 1 additional byte (positioned before the data) that indicates the type of message being sent.
 All fields/parameters are sent in **big-endian** format.
 
+.. _message_headers:
+
 Message headers
 ---------------
 

@@ -6,9 +6,9 @@ Operations
    :hidden:
 
    Lock open <lock-open>
-
-**Operations**
+   Lock close <lock-close>
+   Pull spring <pull-spring>
 
 - `Lock open <lock-open.html>`_
-
- To be continued ...
+- `Lock close <lock-close.html>`_
+- `Pull spring <pull-spring.html>`_

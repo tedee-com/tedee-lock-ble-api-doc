@@ -1,5 +1,5 @@
-Battery
-=======
+Lock state
+==========
 
 .. toctree::
    :maxdepth: 1

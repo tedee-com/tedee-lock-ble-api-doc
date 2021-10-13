@@ -23,7 +23,6 @@ Tedee Lock BLE API documentation
    Begin integration <howtos/begin-integration>
    Find Tedee Lock <howtos/find-tedee-lock>
    Establish PTLS session <howtos/establish-ptls-session>
-   Lock calibration <howtos/lock-calibration>
    Lock operations <howtos/lock-operations>
 
 .. toctree::
@@ -58,21 +57,17 @@ Tedee Lock BLE API documentation
    :hidden:
 
    commands/security/index
-   commands/battery/index
-   commands/calibration/index
    commands/operations/index
-   commands/pins/index
-   commands/settings/index
+   commands/battery/index
 
 .. toctree::
    :maxdepth: 1
    :caption: Notifications
    :hidden:
 
-   notifications/calibration/index
+   notifications/security/index
    notifications/operations/index
    notifications/battery/index
-   notifications/pins/index
 
 This site contains a documentation for Tedee Lock BLE API.
 It aims to help users to intergrate custom solutions with Tedee Lock BLE API.
