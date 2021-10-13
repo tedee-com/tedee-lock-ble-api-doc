@@ -26,6 +26,8 @@ It is not possible to establish PTLS session if permissions are not successfully
 Establishment of a PTLS session requires setup of the date and time from a trusted source (`Tedee API <https://api.tedee.com/>`_). 
 This should be done using the API command (:doc:`SET_SIGNED_DATETIME <../commands/security/set-signed-time>`) after the :ref:`specific error code <ptls-error-codes>` was returned when establishing the session. 
 
+.. _ptls_algorithms:
+
 Algorithms used
 ---------------
 
