@@ -16,7 +16,6 @@ To learn step by step how to integrate with tedee, please follow these tutorials
 
 * :doc:`Find Tedee Lock <find-tedee-lock>`
 * :doc:`Establish PTLS session <establish-ptls-session>`
-* :doc:`Lock calibration <lock-calibration>`
 * :doc:`Lock operations <lock-operations>`
 
 More information

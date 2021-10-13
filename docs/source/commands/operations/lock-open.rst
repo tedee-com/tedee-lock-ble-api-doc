@@ -3,7 +3,7 @@ Open lock
 
 OPEN_LOCK code is 0x51.
 
-Command is used to open the lock.
+Command is used to open the lock. Response is encrypted so before parsing should be decrypted.
 
 Input parameters
 ----------------
@@ -51,3 +51,26 @@ Output parameters
 
 Output parameter will indicate number of seconds since last "open lock" operation. 
 The value is passed as 4 bytes in Big-endian format. (**UNLOCK_ALREADY_CALLED_BY_AUTOUNLOCK** and **UNLOCK_ALREADY_CALLED_BY_OTHER_OPERATION**).
+
+Example
+-------
+
+1. Form message for encryption,
+
++-------------------+-------------+
+| **Command Value** | **param**   |
++-------------------+-------------+
+| 0x51              | 0x00 (NONE) |
++-------------------+-------------+
+
+2. :doc:`Encrypt <../../ptls/secured_communication>` prepared message,
+3. Send it on :ref:`API commands characteristic <api_commands_characteristic>`,
+4. Receive response on :ref:`API commands characteristic <api_commands_characteristic>`,
+5. :doc:`Decrypt <../../ptls/secured_communication>` received response discarding :ref:`first header byte <message_headers>`,
+6. Parse response
+
++----------------+
+| **Response**   |
++----------------+
+| 0x00 (SUCCESS) |
++----------------+

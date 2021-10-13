@@ -66,6 +66,7 @@ Tedee Lock BLE API documentation
    :caption: Notifications
    :hidden:
 
+   notifications/security/index
    notifications/operations/index
    notifications/battery/index
    notifications/pins/index
