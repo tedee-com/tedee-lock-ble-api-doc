@@ -59,7 +59,6 @@ Tedee Lock BLE API documentation
    commands/security/index
    commands/operations/index
    commands/battery/index
-   commands/pins/index
 
 .. toctree::
    :maxdepth: 1
@@ -69,7 +68,6 @@ Tedee Lock BLE API documentation
    notifications/security/index
    notifications/operations/index
    notifications/battery/index
-   notifications/pins/index
 
 This site contains a documentation for Tedee Lock BLE API.
 It aims to help users to intergrate custom solutions with Tedee Lock BLE API.
