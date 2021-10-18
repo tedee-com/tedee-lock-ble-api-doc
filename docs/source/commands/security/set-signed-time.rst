@@ -1,15 +1,15 @@
 Set signed time
 ===============
 
-Sets trusted date and time on the device got from `Tedee API <https://api.tedee.com/>`_.
+Sets trusted date and time on the device got from `Tedee API <https://tedee-tedee-api-doc.readthedocs-hosted.com/en/latest/endpoints/datetime/get-signed-time.html>`_.
 
 SET_SIGNED_DATETIME code is 0x71
 
 Input parameters
 ----------------
 
-param[0 .. 7]: datetime received from `Tedee API <https://api.tedee.com/>`_ and decoded from base64,
-param[8 .. signature_len+7]: signature received from `Tedee API <https://api.tedee.com/>`_.
+param[0 .. 7]: datetime received from `Tedee API <https://tedee-tedee-api-doc.readthedocs-hosted.com/en/latest/endpoints/datetime/get-signed-time.html>`_ and decoded from base64,
+param[8 .. signature_len+7]: signature received from `Tedee API <https://tedee-tedee-api-doc.readthedocs-hosted.com/en/latest/endpoints/datetime/get-signed-time.html>`_.
 
 Result
 ------
@@ -31,7 +31,7 @@ none
 Example
 -------
 
-#. Get signed time from `Tedee API <https://api.tedee.com/>`_.
+#. Get signed time from `Tedee API <https://tedee-tedee-api-doc.readthedocs-hosted.com/en/latest/endpoints/datetime/get-signed-time.html>`_.
 #. Decode datetime and signature from base64.
 #. Create such frame:
 

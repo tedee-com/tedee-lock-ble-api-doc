@@ -13,6 +13,14 @@ Message headers
 
 On characteristics: :ref:`notifications_characteristic` and :ref:`api_commands_characteristic`
 
+.. note::
+
+    Please ommit upper half byte of message header as it is reserved.
+
+    .. code::
+
+        data[0] = data[0] & 0x0F
+
 +-----------------------+-------+---------------------------------------------------------------------------------------+
 | Header                | Value | Description                                                                           |
 +-----------------------+-------+---------------------------------------------------------------------------------------+

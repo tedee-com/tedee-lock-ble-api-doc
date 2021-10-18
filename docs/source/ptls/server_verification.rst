@@ -51,7 +51,7 @@ Server side is a Tedee lock.
     #. Decrypt message using AEAD algorithm (AES GCM 128bit).
     #. Check if hash in decrypted message is the same as after last hello message (:ref:`client_hello_final`).
     #. Verify compliance of the verification data (*auth data*).
-    #. Verify signature from hash in 2. point of :ref:`client_challange_server_verify` using *server* public key (got from (`Tedee API <https://api.tedee.com/>`_)).
+    #. Verify signature from hash in 2. point of :ref:`client_challange_server_verify` using *server* public key (got from (`Tedee API <https://tedee-tedee-api-doc.readthedocs-hosted.com/en/latest/howtos/connect-device-via-ble.html#step-3-get-certificate-for-mobile-device>`_)).
     #. :doc:`Calculate hash <hash_calculation>` from:
     
 +--------+---------------+---------------+--------+---------------------+------------+
