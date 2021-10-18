@@ -9,7 +9,7 @@ Connected device will send each part without waiting for response from Tedee Loc
 1. Client ask for verification
 ------------------------------
 
-    #. Get permission certificate via `Tedee API <https://api.tedee.com/>`_
+    #. Get permission certificate via `Tedee API <https://tedee-tedee-api-doc.readthedocs-hosted.com/en/latest/howtos/connect-device-via-ble.html#step-3-get-certificate-for-mobile-device>`_
     #. Decode certificate from Base64.
     #. Attach certificate length on 2 bytes.
     #. Attach certificate to the message.

@@ -5,7 +5,7 @@ PTLS session is simplified and modified version of the TLS 1.3 protocol used for
 It allows to authorize the communicating parties with each other and to fully encrypt the transmitted data.
 
 The system architecture assumes that each User has an individual account and can log in with an email address and the password. 
-Each user's access device (e.g. mobile phone) from which the login was made is automatically registered in the system. 
+Each user's access device (e.g. mobile phone) from which the login was made is automatically `registered <https://tedee-tedee-api-doc.readthedocs-hosted.com/en/latest/endpoints/mobile/register.html>`_ in the system. 
 When registering, a key pair is generated on the user's access device:
 
 - **Device Private Key** (ECDSA asymmetric key - prime256v1) - The private key of the access device (mobile phone), is stored only in that device and nowhere else. It is used for establishing the PTLS session.
@@ -23,7 +23,7 @@ Please note that due to the naming convention, the connected device is in this c
 During session establishment, the "client side" sends an permission certificate. 
 The permissions contained in the certificate and its signature are verified by the Tedee Lock. 
 It is not possible to establish PTLS session if permissions are not successfully verified or if any session establishment steps failed.
-Establishment of a PTLS session requires setup of the date and time from a trusted source (`Tedee API <https://api.tedee.com/>`_). 
+Establishment of a PTLS session requires setup of the `date and time <https://tedee-tedee-api-doc.readthedocs-hosted.com/en/latest/endpoints/datetime/get-signed-time.html>`_ from a trusted source (`Tedee API <https://api.tedee.com/>`_). 
 This should be done using the API command (:doc:`SET_SIGNED_DATETIME <../commands/security/set-signed-time>`) after the :ref:`specific error code <ptls-error-codes>` was returned when establishing the session. 
 
 .. _ptls_algorithms:
@@ -47,6 +47,12 @@ There are 4 stages of PTLS session:
 #. :doc:`Server verification <server_verification>`
 #. :doc:`Client verification <client_verification>`
 #. :doc:`Secured communication <secured_communication>`.
+
+PTLS session establishement is presented on below communication diagram.
+
+.. image:: ../images/ptls-diagram.jpg
+    :align: center
+    :alt: lock states diagram
 
 For every step should be used two characteristics: :ref:`ptls_tx_characteristic` and :ref:`ptls_rx_characteristic`.
 

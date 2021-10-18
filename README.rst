@@ -2,6 +2,10 @@
 Tedee Lock BLE API documentation
 =======================
 
+.. image:: https://readthedocs.com/projects/tedee-tedee-lock-ble-api-doc/badge/?version=latest&token=cfeda501b4e6e146378669914c71e3fca707240bb3460b3b646db2daa992daf1
+    :target: https://tedee-tedee-lock-ble-api-doc.readthedocs-hosted.com/en/latest/?badge=latest
+    :alt: Documentation Status
+
 Overview
 ========
 

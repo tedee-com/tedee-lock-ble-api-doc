@@ -15,7 +15,10 @@ You'll need:
 Registration and authentication
 -------------------------------
 
-Before you can use the BLE API you must establish PTLS session first. The process of establishing that session is described in dedicated :doc:`section <../howtos/establish-ptls-session>`.
+Before you can use the BLE API you must:
+
+#. `Register device on backend <https://tedee-tedee-api-doc.readthedocs-hosted.com/en/latest/howtos/connect-device-via-ble.html>`_. 
+#. Establish PTLS session. The process of establishing that session is described in dedicated :doc:`section <../howtos/establish-ptls-session>`.
 
 BLE API commands
 ----------------
@@ -45,6 +48,15 @@ BLE API Response
 
 On every command send on :ref:`API commands characteristic <api_commands_characteristic>` you will get response.
 You can also receive data from lock asynchronuosly via :ref:`Notifications characteristic <notifications_characteristic>`.
+
+.. note::
+
+    Please ommit upper half byte of message header as it is reserved on :ref:`API commands characteristic <api_commands_characteristic>` and :ref:`Notifications characteristic <notifications_characteristic>`.
+
+    .. code::
+
+        data[0] = data[0] & 0x0F
+
 
 Response BLE frame
 ^^^^^^^^^^^^^^^^^^

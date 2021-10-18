@@ -82,6 +82,7 @@ Useful links
 
 - `Forum <https://tedee.freshdesk.com/en/support/discussions>`_
 - `Tedee API <https://api.tedee.com/>`_
+- `Tedee API doc <https://tedee-tedee-api-doc.readthedocs-hosted.com/en/latest/>`_
 - `Documentation repository <https://github.com/tedee-com/tedee-lock-ble-api-doc>`_
 
 
