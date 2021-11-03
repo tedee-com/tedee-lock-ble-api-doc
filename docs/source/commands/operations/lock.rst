@@ -1,9 +1,9 @@
-Close lock
-==========
+Lock
+=====
 
-CLOSE_LOCK code is 0x50
+LOCK_COMMAND code is 0x50
 
-Command is used to close the lock.
+Command is used to lock the lock.
 
 Input parameters
 ----------------
@@ -12,9 +12,9 @@ param[0]: if not attached to command then default value is **NONE**.
 +----------------+-----------+----------------------------------------------+
 | **Param name** | **Value** | **Description**                              |
 +----------------+-----------+----------------------------------------------+
-| NONE           | 0x00      | Close lock                                   |
+| NONE           | 0x00      | Lock the lock                                |
 +----------------+-----------+----------------------------------------------+
-| FORCE          | 0x02      | | Forces lock to close lock till jamm.       |
+| FORCE          | 0x02      | | Forces to lock till jamm.                  |
 |                |           | | **Should be used only in emergency case**. |
 +----------------+-----------+----------------------------------------------+
 

@@ -23,22 +23,22 @@ Before you can use the BLE API you must:
 BLE API commands
 ----------------
 
-To interact with the Tedee Lock BLE API, you can send:
+To interact with the Tedee Lock BLE API, you can send following commands:
 
-* :doc:`open lock <commands/operations/lock-open>`,
-* :doc:`close lock <commands/operations/lock-close>`,
-* :doc:`pull-spring <commands/operations/pull-spring>`.
+* :doc:`unlock <commands/operations/unlock>`,
+* :doc:`lock <commands/operations/lock>`,
+* :doc:`pull spring <commands/operations/pull-spring>`.
 
 Example request
 ^^^^^^^^^^^^^^^^
 
 1. Form message for encryption,
 
-+-------------------+-------------+
-| **Command Value** | **param**   |
-+-------------------+-------------+
-| 0x51 (LOCK_OPEN)  | 0x00 (NONE) |
-+-------------------+-------------+
++--------------------+-------------+
+| **Command Value**  | **param**   |
++--------------------+-------------+
+| 0x51 (UNLOCK_LOCK) | 0x00 (NONE) |
++--------------------+-------------+
 
 2. :doc:`Encrypt <../../ptls/secured_communication>` prepared message,
 3. Send it on :ref:`API commands characteristic <api_commands_characteristic>`,

@@ -1,9 +1,9 @@
-Open lock
-=========
+Unlock
+======
 
-OPEN_LOCK code is 0x51.
+UNLOCK_COMMAND code is 0x51.
 
-Command is used to open the lock. Response is encrypted so before parsing should be decrypted.
+Command is used to unlock the lock. Response is encrypted so before parsing should be decrypted.
 
 Input parameters
 ----------------
@@ -49,7 +49,7 @@ Result
 Output parameters
 ----------------- 
 
-Output parameter will indicate number of seconds since last "open lock" operation. 
+Output parameter will indicate number of seconds since last "unlock command" operation. 
 The value is passed as 4 bytes in Big-endian format. (**UNLOCK_ALREADY_CALLED_BY_AUTOUNLOCK** and **UNLOCK_ALREADY_CALLED_BY_OTHER_OPERATION**).
 
 Example

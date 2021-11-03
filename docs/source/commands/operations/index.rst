@@ -5,10 +5,10 @@ Operations
    :maxdepth: 1
    :hidden:
 
-   Lock open <lock-open>
-   Lock close <lock-close>
+   Unlock <unlock>
+   Lock <lock>
    Pull spring <pull-spring>
 
-- `Lock open <lock-open.html>`_
-- `Lock close <lock-close.html>`_
+- `Unlock <unlock.html>`_
+- `Lock <lock.html>`_
 - `Pull spring <pull-spring.html>`_
