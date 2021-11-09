@@ -1,10 +1,6 @@
 Release notes
 =============
 
-**2021-10-07:**
+**2021-11-09:**
 
-* Initial version of BLE and PTLS documentation
-
-**2021-09-30:**
-
-* Initial version of documentation format
+* Initial version of documentation.
