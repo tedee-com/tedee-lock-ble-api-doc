@@ -47,7 +47,7 @@ The connected device will send each part without waiting for a response from Ted
 +-----------------+----------------------+---------------+---------------+--------------------+
 
 2. Server verifies the client
--------------------------
+-----------------------------
 
 Response after successful verification.
 
@@ -58,7 +58,7 @@ Response after successful verification.
 +-------------------------+------------+
 
 3. Client handle the final response
--------------------------------
+-----------------------------------
 
     #. Receive PTLS_INITIALIZED frame and save received client session ID (**4bytes**).
     #. Initialize session object and variables:

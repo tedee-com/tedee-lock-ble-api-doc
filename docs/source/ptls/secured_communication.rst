@@ -24,7 +24,7 @@ Encrypt the message using the AEAD algorithm (AES GCM 128bit).
 Increment counter after every encrypted message sent.
 
 The decryption of received messages
--------------------------------
+-----------------------------------
 
 | You will receive encrypted responses on :ref:`api_commands_characteristic` and :ref:`notifications_characteristic` characteristic.
 | You can recognize encrypted message via :doc:`DATA_ENCRYPTED <../ble/message_frame>` header attached as a first byte of the message.
