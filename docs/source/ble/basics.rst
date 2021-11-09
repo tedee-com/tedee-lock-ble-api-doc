@@ -1,7 +1,7 @@
 BLE basics
 ==========
 
-To communicate with our lock you need device that support wireless BLE connectivity.
+To communicate with our lock you need a device that supports wireless BLE connectivity.
 
 Requirements
 ------------
@@ -17,9 +17,9 @@ Preferred Connection Parameters
 - Supervision timeout **4s**.
 
 | Lock communicates using **1Mbps** physical layer.
-| Lock allows of 3 simultaneous BLE connections.
+| Lock allows for 3 simultaneous BLE connections.
 
 .. note::
 
     - When the connection is established (open Bluetooth communication), the Tedee lock does not send any information (it does not start transmitting any data, including notifications).
-    - Connected device should initiate the PTLS session by sending "hello" message within **10s** (if not Lock will disconnect).
+    - Connected device should initiate the PTLS session by sending a "hello" message within **10s** (if not, Lock will disconnect).

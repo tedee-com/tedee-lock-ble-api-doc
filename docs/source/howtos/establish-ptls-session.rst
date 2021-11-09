@@ -1,7 +1,7 @@
 How to establish PTLS session
 =============================
 
-As a security library we recommend using `MbedTLS <https://github.com/ARMmbed/mbedtls>`_.
+As a security library, we recommend using `MbedTLS <https://github.com/ARMmbed/mbedtls>`_.
 
 To startup establishing PTLS session you need to:
 
@@ -15,7 +15,7 @@ To startup establishing PTLS session you need to:
    #. :doc:`Server verification <../ptls/server_verification>`
    #. :doc:`Client verification <../ptls/client_verification>`
 
-PTLS session establishement is presented on below communication diagram.
+PTLS session establishment is presented in below communication diagram.
 
 .. image:: ../images/ptls-diagram.jpg
     :align: center

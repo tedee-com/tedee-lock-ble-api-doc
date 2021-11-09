@@ -3,7 +3,7 @@ Battery state
 
 BATTERY_STATE code is 0xA0
 
-Lock sends this notification whenever battery level changed.
+Lock sends this notification whenever the battery level changed.
 
 Parameters
 ----------

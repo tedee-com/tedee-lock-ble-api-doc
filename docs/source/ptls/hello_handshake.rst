@@ -1,8 +1,8 @@
 PTLS hello messages
 ===================
 
-Client side is an external device that is connected to lock and want to establish PTLS session.
-Server side is a Tedee lock.
+The client side is an external device that is connected to the lock and wants to establish a PTLS session.
+The server side is a Tedee lock.
 
 1. Client hello
 ---------------
@@ -24,12 +24,12 @@ Server side is a Tedee lock.
 
     where:
 
-    - PTLS_CACHE_DATA - is used during establishement of PTLS session from cached data after previous successfull PTLS session. For new session it should be 52bytes of zeros.
+    - PTLS_CACHE_DATA - is used during the establishment of PTLS session from cached data after previous successful PTLS session. For the new session, it should be 52bytes of zeros.
 
 .. _server_hello_response:
 
-2. Server hello reponse
------------------------
+2. Server hello response
+------------------------
 
 Unencrypted response:
 

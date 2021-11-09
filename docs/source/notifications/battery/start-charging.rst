@@ -3,7 +3,7 @@ Start charging
 
 BATTERY_START_CHARGING code is 0xBC
 
-Lock sends this notification when battery started charging process. 
+Lock sends this notification when the battery started the charging process. 
 
 Parameter
 ---------

@@ -1,12 +1,12 @@
-Logo guideliness
+Logo guidelines
 ================
 
-If you want to use the tedee logo in your applicaton / plugin / extension, it must meet some requirements.
+If you want to use the tedee logo in your application / plugin / extension, it must meet some requirements.
 
 Logo variations
 ---------------
 
-You can use tedee logo in two different variations: full logo - contain sign with full tedee symbol, second option is only a 't' symbol on blue background.
+You can use the tedee logo in two different variations: full logo - contain sign with full tedee symbol, the second option is only a 't' symbol on blue background.
 
 | `Download tedee full logo <https://storage.googleapis.com/tedee-wp/2020/11/FullTedeeLogo.zip>`_
 | `Download tedee sign <https://storage.googleapis.com/tedee-wp/2020/11/TedeeSign.zip>`_
@@ -24,10 +24,10 @@ The protective field defines the minimal area around the logo, where no other te
     :align: center
     :alt: tedee logo safe areas
 
-Main colour
+Main color
 -----------
 
-The main brand colour is shade of blue.
+The main brand color is a shade of blue.
 
 .. image:: images/tedee-logo-colour.png
     :align: center

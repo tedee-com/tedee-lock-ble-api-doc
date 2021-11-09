@@ -3,7 +3,7 @@ Get battery information
 
 GET_BATTERY code is 0x0C
 
-Gets battery level and charging status. Battery level is as percentage.
+Gets battery level and charging status. The battery level is a percentage.
 
 Input parameters
 ----------------
