@@ -11,6 +11,8 @@ Overview
 
 This repository contains a documentation of the Tedee Lock BLE API. It aims to help users to integrate directly with the lock via BLE API.
 
+You can find a compiled version of this documentation `here <https://tedee-tedee-lock-ble-api-doc.readthedocs-hosted.com/en/latest>`_.
+
 Visit our website `tedee.com <https://tedee.com>`_.
 
 Contribution
