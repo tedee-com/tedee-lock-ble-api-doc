@@ -47,11 +47,11 @@ BLE API Response
 -----------------
 
 On every command send on :ref:`API commands characteristic <api_commands_characteristic>` you will get response.
-You can also receive data from lock asynchronuosly via :ref:`Notifications characteristic <notifications_characteristic>`.
+You can also receive data from lock asynchronously via :ref:`Notifications characteristic <notifications_characteristic>`.
 
 .. note::
 
-    Please ommit upper half byte of message header as it is reserved on :ref:`API commands characteristic <api_commands_characteristic>` and :ref:`Notifications characteristic <notifications_characteristic>`.
+    Please omit upper half byte of message header as it is reserved on :ref:`API commands characteristic <api_commands_characteristic>` and :ref:`Notifications characteristic <notifications_characteristic>`.
 
     .. code::
 

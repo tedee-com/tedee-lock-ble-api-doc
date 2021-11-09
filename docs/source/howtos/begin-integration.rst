@@ -1,7 +1,7 @@
 How to begin integration
 ========================
 
-All the commands exposed on this BLE API require PTLS session.
+All the commands presented in this BLE API require PTLS session.
 You can find a guide to achieve that on :doc:`establish-ptls-session` page.
 As security library we recommend using:
 

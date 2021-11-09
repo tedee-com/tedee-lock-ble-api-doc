@@ -1,7 +1,7 @@
-Logo guideliness
+Logo guidelines
 ================
 
-If you want to use the tedee logo in your applicaton / plugin / extension, it must meet some requirements.
+If you want to use the tedee logo in your application / plugin / extension, it must meet some requirements.
 
 Logo variations
 ---------------

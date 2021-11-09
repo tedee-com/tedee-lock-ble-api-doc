@@ -3,7 +3,7 @@ How to operate your Tedee lock
 
 To send specific commands to lock about locking or unlocking you need to :doc:`establish PTLS session <establish-ptls-session>`.
 
-After you successfully established PTLS session you need to turn on BLE indications on :ref:`API commands characteristic <api_commands_characteristic>`.
+After you have successfully established PTLS session you need to turn on BLE indications on :ref:`API commands characteristic <api_commands_characteristic>`.
 
 .. note::
     Your lock should be calibrated already before using these endpoints.
@@ -23,3 +23,6 @@ Each action can be performed only in specific lock states. Here is Lock state di
 .. image:: ../images/lock-states-diagram.png
     :align: center
     :alt: lock states diagram
+
+| Lock states presented with blue fields and white letters are stable states. 
+| States showed using grey fields and blue letters are temporary states.

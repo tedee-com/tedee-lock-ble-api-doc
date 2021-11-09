@@ -18,6 +18,6 @@ Serial Number service
 
     *xxxx0000-xxxx-xxxx-xx00-000000000000*
 
-    The only purpose of this service is to present device serial number for identification purposes. No communication is implement using this service.
+    The only purpose of this service is to present device serial number for identification purposes. No communication is implemented using this service.
 
 Other services that are forbidden for usage.
