@@ -3,7 +3,7 @@ Lock state notification
 
 LOCK_STATUS_CHANGE code is 0xBA.
 
-Lock sends it's state change.
+Lock sends its state change.
 
 Parameters
 ----------
@@ -13,7 +13,7 @@ Param[0] - Actual state
 +--------------------+-----------+-------------------------------------------------------------------------------+
 | **State name**     | **Value** | **Description**                                                               |
 +--------------------+-----------+-------------------------------------------------------------------------------+
-| UNCALIBRATED       | 0x00      | Lock do not have any calibration.                                             |
+| UNCALIBRATED       | 0x00      | Lock does not have any calibration.                                           |
 +--------------------+-----------+-------------------------------------------------------------------------------+
 | CALIBRATION        | 0x01      | Lock is in calibration mode.                                                  |
 +--------------------+-----------+-------------------------------------------------------------------------------+
@@ -21,11 +21,11 @@ Param[0] - Actual state
 +--------------------+-----------+-------------------------------------------------------------------------------+
 | PARTIALLY_UNLOCKED | 0x03      | Lock is in the middle of calibrated locked/unlocked positions.                |
 +--------------------+-----------+-------------------------------------------------------------------------------+
-| UNLOCKING          | 0x04      | Lock is rotating to unlocked position.                                        |
+| UNLOCKING          | 0x04      | Lock is rotating to an unlocked position.                                     |
 +--------------------+-----------+-------------------------------------------------------------------------------+
-| LOCKING            | 0x05      | Lock is rotating to locked position.                                          |
+| LOCKING            | 0x05      | Lock is rotating to a locked position.                                        |
 +--------------------+-----------+-------------------------------------------------------------------------------+
-| LOCKED             | 0x06      | Lock is in calibrated locked position.                                        |
+| LOCKED             | 0x06      | Lock is in the calibrated locked position.                                    |
 +--------------------+-----------+-------------------------------------------------------------------------------+
 | PULL_SPRING        | 0x07      | Lock is in calibrated pull spring position.                                   |
 +--------------------+-----------+-------------------------------------------------------------------------------+

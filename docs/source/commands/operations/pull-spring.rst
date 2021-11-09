@@ -3,7 +3,7 @@ Pull spring
 
 PULL_SPRING code is 0x52
 
-Commands tells lock to just pull the spring.
+Command tells lock to just pull the spring.
 
 Input parameters
 ----------------
@@ -18,9 +18,9 @@ Result
 +------------------------------------------+-----------+-------------------------------------------------------------------------+
 | ERROR                                    | 0x02      | Error occured.                                                          |
 +------------------------------------------+-----------+-------------------------------------------------------------------------+
-| BUSY                                     | 0x03      | Lock is currently performing other operation. Wait for change state.    |
+| BUSY                                     | 0x03      | Lock is currently performing other operations. Wait for changing state. |
 +------------------------------------------+-----------+-------------------------------------------------------------------------+
-| NOT_CALIBRATED                           | 0x05      | Lock do not have calibration. Please calibrate the lock.                |
+| NOT_CALIBRATED                           | 0x05      | Lock does not have calibration. Please calibrate the lock.              |
 +------------------------------------------+-----------+-------------------------------------------------------------------------+
 | NOT_CONFIGURED                           | 0x08      | Lock auto pull spring feature is turned off.                            |
 +------------------------------------------+-----------+-------------------------------------------------------------------------+

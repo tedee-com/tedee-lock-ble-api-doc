@@ -3,7 +3,7 @@ Stop charging
 
 BATTERY_STOP_CHARGING code is 0xBD
 
-Lock sends this notification when battery stopped charging process 
+Lock sends this notification when the battery stopped the charging process 
 
 Parameter
 ---------

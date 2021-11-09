@@ -1,12 +1,12 @@
 PTLS server verification
 ========================
 
-Client side is an external device that is connected to lock and want to establish PTLS session.
-Server side is a Tedee lock.
+The client side is an external device that is connected to the lock and wants to establish a PTLS session.
+The server side is a Tedee lock.
 
 .. _client_challange_server_verify:
 
-1. Client challange server verification
+1. Client challenge server verification
 ---------------------------------------
 
     #. Prepare *Auth data* as a current datetime in ms (**8bytes**),
@@ -31,7 +31,7 @@ Server side is a Tedee lock.
 2. Server response
 ------------------
 
-    Response is encrypted using AEAD algorithm (AES GCM 128bit) with header PTLS_SRV_VERIFY.
+    The response is encrypted using the AEAD algorithm (AES GCM 128bit) with header PTLS_SRV_VERIFY.
     Message before encryption:
 
 +-----------------+----------------------+--------+---------------+---------------+--------+---------------------+------------+
@@ -46,10 +46,10 @@ Server side is a Tedee lock.
 -----------------------------
 
     #. Calculate HMAC from a shared secret, *ptlss hs traffic* and last hash from hello handshake (:ref:`client_hello_final`).
-    #. First 16 bytes of HMAC are used as decryption key.
-    #. Next 12 bytes of HMAC are used as iv vector.
-    #. Decrypt message using AEAD algorithm (AES GCM 128bit).
-    #. Check if hash in decrypted message is the same as after last hello message (:ref:`client_hello_final`).
+    #. The first 16 bytes of HMAC are used as the decryption key.
+    #. The next 12 bytes of HMAC are used as iv vector.
+    #. Decrypt a message using the AEAD algorithm (AES GCM 128bit).
+    #. Check if the hash in the decrypted message is the same as after the last hello message (:ref:`client_hello_final`).
     #. Verify compliance of the verification data (*auth data*).
     #. Verify signature from hash in 2. point of :ref:`client_challange_server_verify` using *server* public key (got from (`Tedee API <https://tedee-tedee-api-doc.readthedocs-hosted.com/en/latest/howtos/connect-device-via-ble.html#step-3-get-certificate-for-mobile-device>`_)).
     #. :doc:`Calculate hash <hash_calculation>` from:

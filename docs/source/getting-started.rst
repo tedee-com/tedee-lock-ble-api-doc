@@ -1,15 +1,15 @@
 Getting started
 ===============
 
-Tedee Lock BLE API exposes resources that enable you to work with tedee lock. By calling relevant command user is able, among others, to manipulate lock, get battery level or read it's activities. This guide aims to help you to get started with Tedee Lock BLE API.
+Tedee Lock BLE API exposes resources that enable you to work with tedee lock. By calling relevant commands the user is able, among others, to manipulate lock, get battery level or read its activities. This guide aims to help you to get started with Tedee Lock BLE API.
 
-What you need?
---------------
+What do you need?
+-----------------
 
 Starting working with the lock's BLE API does require some prerequisites.
 You'll need:
 
-* Device that support's BLE 5.0 module to communicate with tedee lock correctly.
+* Device that supports BLE 5.0 module to communicate with tedee lock correctly.
 * :ref:`Security algorithms <ptls_algorithms>` support.
 
 Registration and authentication
@@ -23,7 +23,7 @@ Before you can use the BLE API you must:
 BLE API commands
 ----------------
 
-To interact with the Tedee Lock BLE API, you can send following commands:
+To interact with the Tedee Lock BLE API, you can send the following commands:
 
 * :doc:`unlock <commands/operations/unlock>`,
 * :doc:`lock <commands/operations/lock>`,
@@ -46,12 +46,12 @@ Example request
 BLE API Response
 -----------------
 
-On every command send on :ref:`API commands characteristic <api_commands_characteristic>` you will get response.
+On every command send on :ref:`API commands characteristic <api_commands_characteristic>` you will get a response.
 You can also receive data from lock asynchronously via :ref:`Notifications characteristic <notifications_characteristic>`.
 
 .. note::
 
-    Please omit upper half byte of message header as it is reserved on :ref:`API commands characteristic <api_commands_characteristic>` and :ref:`Notifications characteristic <notifications_characteristic>`.
+    Please omit the upper half byte of the message header as it is reserved on :ref:`API commands characteristic <api_commands_characteristic>` and :ref:`Notifications characteristic <notifications_characteristic>`.
 
     .. code::
 

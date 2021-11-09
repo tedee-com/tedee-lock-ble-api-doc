@@ -3,11 +3,11 @@ Unlock
 
 UNLOCK_COMMAND code is 0x51.
 
-Command is used to unlock the lock. Response is encrypted so before parsing should be decrypted.
+The command is used to unlock the lock. The response is encrypted so before parsing should be decrypted.
 
 Input parameters
 ----------------
-param[0]: if not attached to command then default value is **NONE**.
+param[0]: if not attached to the command then the default value is **NONE**.
 
 +----------------+-----------+----------------------------------------------+
 | **Param name** | **Value** | **Description**                              |
@@ -16,10 +16,10 @@ param[0]: if not attached to command then default value is **NONE**.
 +----------------+-----------+----------------------------------------------+
 | AUTO           | 0x01      | Unlock from auto unlock feature.             |
 +----------------+-----------+----------------------------------------------+
-| FORCE          | 0x02      | | Forces lock to unlock lock till jamm.      |
+| FORCE          | 0x02      | | Forces lock to unlock lock till jam.       |
 |                |           | | **Should be used only in emergency case**. |
 +----------------+-----------+----------------------------------------------+
-		
+        
 Result
 ------
 +------------------------------------------+-----------+-------------------------------------------------------------------------+
@@ -31,9 +31,9 @@ Result
 +------------------------------------------+-----------+-------------------------------------------------------------------------+
 | ERROR                                    | 0x02      | Error occured.                                                          |
 +------------------------------------------+-----------+-------------------------------------------------------------------------+
-| BUSY                                     | 0x03      | Lock is currently performing other operation. Wait for change state.    |
+| BUSY                                     | 0x03      | Lock is currently performing other operations. Wait for changing state. |
 +------------------------------------------+-----------+-------------------------------------------------------------------------+
-| NOT_CALIBRATED                           | 0x05      | Lock do not have calibration. Please calibrate the lock.                |
+| NOT_CALIBRATED                           | 0x05      | Lock does not have calibration. Please calibrate the lock.              |
 +------------------------------------------+-----------+-------------------------------------------------------------------------+
 | ALREADY_CALLED_BY_AUTOUNLOCK             | 0x06      | | Last unlock operation was auto unlock and it happened < 3min          |
 |                                          |           | | (current lock state does not matter).                                 |
@@ -49,7 +49,7 @@ Result
 Output parameters
 ----------------- 
 
-Output parameter will indicate number of seconds since last "unlock command" operation. 
+The output parameter will indicate a number of seconds since the last "unlock command" operation. 
 The value is passed as 4 bytes in Big-endian format. (**UNLOCK_ALREADY_CALLED_BY_AUTOUNLOCK** and **UNLOCK_ALREADY_CALLED_BY_OTHER_OPERATION**).
 
 Example

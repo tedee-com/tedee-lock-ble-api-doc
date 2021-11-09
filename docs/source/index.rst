@@ -69,13 +69,13 @@ Tedee Lock BLE API documentation
    notifications/operations/index
    notifications/battery/index
 
-This site contains a documentation for Tedee Lock BLE API.
-It aims to help users to intergrate custom solutions with Tedee Lock BLE API.
+This site contains documentation for Tedee Lock BLE API.
+It aims to help users to integrate custom solutions with Tedee Lock BLE API.
 
 About Tedee
 -----------
 
-**Tedee** is smart home system which allows you control access to your home directly from phone. Please visit our site for more details https://tedee.com.
+**Tedee** is a smart home system that allows you to control access to your home directly from your phone. Please visit our site for more details https://tedee.com.
 
 Useful links
 ------------
@@ -86,7 +86,7 @@ Useful links
 - `Documentation repository <https://github.com/tedee-com/tedee-lock-ble-api-doc>`_
 
 
-Need a help?
-------------
+Need help?
+----------
 
 We encourage you to join a discussion or start a new one under `Community forum <https://tedee.freshdesk.com/en/support/discussions>`_ or ask on `Twiter (@tedee_smartlock) <https://twitter.com/tedee_smartlock>`_.
