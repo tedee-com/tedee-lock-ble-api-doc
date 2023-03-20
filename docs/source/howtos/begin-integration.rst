@@ -21,8 +21,8 @@ To learn step by step how to integrate with tedee, please follow these tutorials
 Examples
 --------
 
-* `How to connect to your device from iOS app <https://github.com/tedee-com/tedee-example-ble-ios>`_
-* `How to connect to your device from Android app <https://github.com/tedee-com/tedee-example-ble-android>`_
+* `PTLS connection from iOS app <https://github.com/tedee-com/tedee-example-ble-ios>`_
+* `PTLS connection from Android app <https://github.com/tedee-com/tedee-example-ble-android>`_
 
 More information
 ----------------
