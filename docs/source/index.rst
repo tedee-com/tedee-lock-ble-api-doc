@@ -60,6 +60,7 @@ Tedee Lock BLE API documentation
    commands/operations/index
    commands/battery/index
    commands/calibration/index
+   commands/pullcalibration/index
 
 .. toctree::
    :maxdepth: 1
