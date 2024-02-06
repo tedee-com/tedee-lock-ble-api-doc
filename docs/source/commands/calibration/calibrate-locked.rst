@@ -1,9 +1,9 @@
-Calibrate closed position
+Calibrate locked position
 =========================
 
-CALIBRATE_CLOSED code is 0x54
+CALIBRATE_LOCKED code is 0x54
 
-Lock saves position for closed state.
+Lock saves position for locked state.
 
 Input parameters
 ----------------

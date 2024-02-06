@@ -3,7 +3,7 @@ Calibration init
 
 CALIBRATION_INIT code is 0x53
 
-Enters lock into calibration process of opened and closed positions.
+Enters lock into calibration process of unlocked and locked positions.
 
 Input parameters
 ----------------

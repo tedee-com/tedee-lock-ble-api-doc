@@ -1,9 +1,9 @@
-Calibrate opened position
-=========================
+Calibrate unlocked position
+===========================
 
-CALIBRATE_OPENED code is 0x55
+CALIBRATE_UNLOCKED code is 0x55
 
-Lock saves position for opened state.
+Lock saves position for unlocked state.
 
 Input parameters
 ----------------
