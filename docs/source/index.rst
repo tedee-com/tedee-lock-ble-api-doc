@@ -70,6 +70,7 @@ Tedee Lock BLE API documentation
    notifications/security/index
    notifications/operations/index
    notifications/battery/index
+   notifications/calibration/index
 
 This site contains documentation for Tedee Lock BLE API.
 It aims to help users to integrate custom solutions with Tedee Lock BLE API.
