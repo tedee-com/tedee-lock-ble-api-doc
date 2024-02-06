@@ -22,11 +22,8 @@ To properly calibrate locked and unlocked positions for the lock you need to:
 
 When you formed command to be send then :doc:`encrypt <../ptls/secured_communication>` and send on :ref:`API commands characteristic <api_commands_characteristic>`.
 
-Each action can be performed only in specific lock states. Here is the Lock state diagram:
+Each action can be performed only in specific calibration state. Here is the calibration state diagram:
 
-.. image:: ../images/lock-states-diagram.png
+.. image:: ../images/lock-calibration-process.png
     :align: center
-    :alt: lock states diagram
-
-| Lock states presented with blue fields and white letters are stable states. 
-| States showed using grey fields and blue letters are temporary states.
+    :alt: lock calibration diagram
