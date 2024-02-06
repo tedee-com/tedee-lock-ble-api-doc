@@ -17,10 +17,10 @@ Result
 | SUCCESS         | 0x00      | Command accepted.              |
 +-----------------+-----------+--------------------------------+
 | ERROR           | 0x02      | | Command rejected.            |
-|                 |           | Lock is not mounted            |
+|                 |           | | Lock is not mounted          |
 +-----------------+-----------+--------------------------------+
 | BUSY            | 0x03      | | Command rejected.            |
-|                 |           | Lock is performing operation   |
+|                 |           | | Lock is performing operation |
 +-----------------+-----------+--------------------------------+
 
 Output parameters
