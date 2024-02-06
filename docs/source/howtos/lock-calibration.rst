@@ -7,7 +7,8 @@ After you have successfully established the PTLS session you need to turn on BLE
 To receive notifications from calibration process turn on notifications on :ref:`notifications_characteristic`.
 
 .. note::
-    Your lock should be mounted on doors before using these endpoints.
+    #. Your lock should be mounted on doors before using these endpoints.
+    #. Lock should be in stable states to init calibration process.
 
 To properly calibrate locked and unlocked positions for the lock you need to:
 
