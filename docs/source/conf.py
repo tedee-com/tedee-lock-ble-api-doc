@@ -19,7 +19,7 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'Tedee Lock BLE API documentation'
-copyright = '2021, Tedee'
+copyright = '2024, Tedee'
 author = 'Tedee'
 
 # -- General configuration ---------------------------------------------------
