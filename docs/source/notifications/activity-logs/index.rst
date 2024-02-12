@@ -1,5 +1,5 @@
 Activity Logs
-===========
+=============
 
 .. toctree::
    :maxdepth: 1
