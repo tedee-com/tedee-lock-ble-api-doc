@@ -1,0 +1,10 @@
+Has Activity Logs
+=================
+
+HAS_LOGS code is 0xA5
+
+Lock sends this notification when has some Activity Logs ready to collect. 
+
+Parameter
+---------
+none
