@@ -1,0 +1,137 @@
+<mxfile host="Electron" modified="2024-02-06T15:41:56.247Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.0.2 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" version="23.0.2" etag="T5k5e2_DYDo_z3hSDwpm" type="device">
+  <diagram id="V6EAEFwaIlpr3qccd9h4" name="Page-1">
+    <mxGraphModel dx="1195" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#439ED2;align=left;strokeColor=none;fontColor=#FFFFFF;strokeWidth=3;opacity=70;" parent="1" vertex="1">
+          <mxGeometry x="230" y="30" width="600" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="&lt;b&gt;&lt;font&gt;Initial stable state&lt;/font&gt;&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#FFFFFF;strokeColor=#006EAF;" parent="1" vertex="1">
+          <mxGeometry x="30" y="95" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;strokeColor=#000000;" parent="1" source="5" target="12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="220" as="sourcePoint" />
+            <mxPoint x="300" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7" value="Calibration init" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fillColor=#439ED2;labelBackgroundColor=none;fontColor=#000000;" parent="6" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-30" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" value="&lt;b&gt;&lt;font color=&quot;#6c8ebf&quot;&gt;Wait for locked position&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" parent="1" vertex="1">
+          <mxGeometry x="480" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="&lt;b&gt;&lt;font color=&quot;#6c8ebf&quot;&gt;Wait for unlocked position&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" parent="1" vertex="1">
+          <mxGeometry x="480" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="" style="endArrow=classic;html=1;exitX=0.817;exitY=1.017;exitDx=0;exitDy=0;entryX=0.817;entryY=-0.033;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;fontColor=#FFFFFF;strokeColor=#000000;" parent="1" source="12" target="13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="190" as="sourcePoint" />
+            <mxPoint x="650" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" value="Calibrate locked&#xa;position" style="edgeLabel;resizable=0;align=center;verticalAlign=middle;fillColor=#439ED2;labelBackgroundColor=none;rotation=90;fontColor=#000000;" parent="16" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20" value="" style="endArrow=classic;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;fontColor=#FFFFFF;strokeColor=#000000;" parent="1" source="13" target="12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="180" as="sourcePoint" />
+            <mxPoint x="490" y="267" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21" value="Calibration init" style="edgeLabel;resizable=0;align=center;verticalAlign=middle;fillColor=#439ED2;labelBackgroundColor=none;rotation=90;fontColor=#000000;" parent="20" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="25" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FFFFFF;strokeColor=#000000;" parent="1" source="13" target="32" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="310" as="sourcePoint" />
+            <mxPoint x="550" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="26" value="Calibrate unlocked&#xa;position" style="edgeLabel;resizable=0;align=center;verticalAlign=middle;fillColor=#439ED2;labelBackgroundColor=none;rotation=90;fontColor=#000000;" parent="25" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="20" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29" value="&lt;b&gt;Unlocked&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#439ED2;strokeColor=none;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="880" y="250" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="&lt;font color=&quot;#6c8ebf&quot; style=&quot;font-size: 9px;&quot;&gt;&lt;b&gt;Distance &amp;gt; 60 degrees&lt;/b&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#bac8d3;strokeColor=#23445d;" parent="1" vertex="1">
+          <mxGeometry x="500" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="35" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontColor=#FFFFFF;strokeColor=#000000;" parent="1" source="32" target="42" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="420" as="sourcePoint" />
+            <mxPoint x="180" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="36" value="&lt;span&gt;Yes&lt;/span&gt;" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fillColor=#439ED2;labelBackgroundColor=none;fontColor=#000000;fontStyle=0" parent="35" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-15" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="39" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#000000;fontColor=#FFFFFF;" parent="1" source="32" target="43" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="329.9999999999999" as="sourcePoint" />
+            <mxPoint x="520" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="40" value="&lt;span&gt;No&lt;/span&gt;" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fillColor=#439ED2;labelBackgroundColor=none;fontColor=#000000;fontStyle=0" parent="39" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="15" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="41" value="&lt;b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Calibration process&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontSize=9;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="465" y="40" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="42" value="&lt;b&gt;&lt;font color=&quot;#4b6385&quot;&gt;Calibration&lt;br&gt;succeed&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" parent="1" vertex="1">
+          <mxGeometry x="660" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="55" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;fontColor=#FFFFFF;" parent="1" source="43" target="54" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43" value="&lt;b&gt;&lt;font color=&quot;#4b6385&quot;&gt;Calibration&lt;br&gt;failed&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" parent="1" vertex="1">
+          <mxGeometry x="254" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="44" value="" style="endArrow=classic;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FFFFFF;strokeColor=#000000;" parent="1" source="12" target="43" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="140" as="sourcePoint" />
+            <mxPoint x="370" y="236.99999999999997" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="45" value="Calibration cancel" style="edgeLabel;resizable=0;align=center;verticalAlign=middle;fillColor=#439ED2;labelBackgroundColor=none;rotation=0;fontColor=#000000;" parent="44" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-45" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="46" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;strokeColor=#000000;" parent="1" source="13" target="43" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="160" as="sourcePoint" />
+            <mxPoint x="360" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="47" value="Calibration cancel" style="edgeLabel;resizable=0;align=center;verticalAlign=middle;fillColor=#439ED2;labelBackgroundColor=none;rotation=0;fontColor=#000000;" parent="46" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="52" value="" style="endArrow=classic;html=1;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;" parent="1" source="42" target="29" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="200" as="sourcePoint" />
+            <mxPoint x="950" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="54" value="&lt;b&gt;&lt;font&gt;Uncalibrated or position according to previous calibration points&lt;/font&gt;&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#FFFFFF;strokeColor=#006EAF;" parent="1" vertex="1">
+          <mxGeometry x="30" y="255" width="150" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
