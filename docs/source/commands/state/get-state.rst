@@ -35,5 +35,5 @@ Output parameters
 
 | param[1]: jammed
 
-    * 0x00 - Not jammed - the lock is not jammed
-    * 0x01 - Is jammed- the lock has jammed
+    * 0x00 - Not jammed - the Lock is not jammed
+    * 0x01 - Is jammed - the Lock has been jammed
