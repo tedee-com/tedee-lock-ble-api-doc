@@ -43,5 +43,3 @@ Param [1] - Last lock state change status
 +----------------------+-----------+-------------------------------------------+
 | STATUS_ERROR_JAMMED  | 0x01      | Lock jammed during last state change.     |
 +----------------------+-----------+-------------------------------------------+
-| STATUS_ERROR_TIMEOUT | 0x02      | Last lock operation time out.             |
-+----------------------+-----------+-------------------------------------------+

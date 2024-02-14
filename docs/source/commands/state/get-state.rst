@@ -20,20 +20,38 @@ Result
 
 Output parameters
 -----------------
-| param[0]: state
+| param[0]: Actual state
 
-    * 0x00 - UNCALIBRATED - the Lock is not calibrated
-    * 0x01 - CALIBRATION - the Lock is in calibration state
-    * 0x02 - OPEN - the Lock is unlocked
-    * 0x03 - PARTIALLY_OPEN - the Lock is partially unlocked
-    * 0x04 - OPENING - the Lock is opening (changing state from Closed to Open)
-    * 0x05 - CLOSING - the Lock is closing (changing state from Opened to Close)
-    * 0x06 - CLOSED - the Lock is locked
-    * 0x07 - PULL_SPRING - the Lock is pulling the spring (not moving)
-    * 0x08 - PULLING - the Lock is moving towards "pull spring" position
-    * 0x09 - UNKNOWN - the Lock is in unknown state
++--------------------+-----------+-------------------------------------------------------------------------------+
+| **State name**     | **Value** | **Description**                                                               |
++--------------------+-----------+-------------------------------------------------------------------------------+
+| UNCALIBRATED       | 0x00      | Lock does not have any calibration.                                           |
++--------------------+-----------+-------------------------------------------------------------------------------+
+| CALIBRATION        | 0x01      | Lock is in calibration mode.                                                  |
++--------------------+-----------+-------------------------------------------------------------------------------+
+| UNLOCKED           | 0x02      | Lock is in calibrated unlocked position.                                      |
++--------------------+-----------+-------------------------------------------------------------------------------+
+| PARTIALLY_UNLOCKED | 0x03      | Lock is in the middle of calibrated locked/unlocked positions.                |
++--------------------+-----------+-------------------------------------------------------------------------------+
+| UNLOCKING          | 0x04      | Lock is rotating to an unlocked position.                                     |
++--------------------+-----------+-------------------------------------------------------------------------------+
+| LOCKING            | 0x05      | Lock is rotating to a locked position.                                        |
++--------------------+-----------+-------------------------------------------------------------------------------+
+| LOCKED             | 0x06      | Lock is in the calibrated locked position.                                    |
++--------------------+-----------+-------------------------------------------------------------------------------+
+| PULL_SPRING        | 0x07      | Lock is in calibrated pull spring position.                                   |
++--------------------+-----------+-------------------------------------------------------------------------------+
+| PULLING            | 0x08      | Lock is rotating to pull spring position.                                     |
++--------------------+-----------+-------------------------------------------------------------------------------+
+| UNKNOWN            | 0x09      | Lock lost angular position but knows directions of unlocked/locked positions. |
++--------------------+-----------+-------------------------------------------------------------------------------+
 
-| param[1]: jammed
+| param[1]: Last lock state change status
 
-    * 0x00 - Not jammed - the Lock is not jammed
-    * 0x01 - Is jammed - the Lock has been jammed
++----------------------+-----------+-------------------------------------------+
+| **Status name**      | **Value** | **Description**                           |
++----------------------+-----------+-------------------------------------------+
+| STATUS_OK            | 0x00      | Last lock state change without issues.    |
++----------------------+-----------+-------------------------------------------+
+| STATUS_ERROR_JAMMED  | 0x01      | Lock jammed during last state change.     |
++----------------------+-----------+-------------------------------------------+

@@ -5,8 +5,8 @@ Activity Logs
    :maxdepth: 1
    :hidden:
 
-   Get Activity Logs (TLV format) <get-logs-tlv>
+   Get Activity Logs <get-logs-tlv>
 
 **Operations**
 
-- `Get Activity Logs (TLV format) <get-logs-tlv.html>`_
+- `Get Activity Logs <get-logs-tlv.html>`_

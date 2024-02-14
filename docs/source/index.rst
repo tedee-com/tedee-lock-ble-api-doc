@@ -25,8 +25,8 @@ Tedee Lock BLE API documentation
    Establish PTLS session <howtos/establish-ptls-session>
    Lock operations <howtos/lock-operations>
    Lock calibration <howtos/lock-calibration>
-   Get state <howtos/get-state>
-   Activity Logs <howtos/activity-logs>
+   Get Lock state <howtos/get-state>
+   Get Activity Logs <howtos/activity-logs>
 
 .. toctree::
    :maxdepth: 1
