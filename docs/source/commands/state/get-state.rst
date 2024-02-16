@@ -3,7 +3,7 @@ Get Lock State
 
 GET_LOGS_TLV code is 0x5A
 
-Gets actual Lock State on demand.
+Gets actual Lock State.
 
 
 Input parameters
