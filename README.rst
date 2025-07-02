@@ -15,6 +15,9 @@ You can find a compiled version of this documentation `here <https://tedee-tedee
 
 Visit our website `tedee.com <https://tedee.com>`_.
 
+.. note::
+   By using this API, you agree to our `Terms of Use <https://tedee.com/terms-of-use-tedee-apis-and-sdks/>`_.
+
 Contribution
 ============
 

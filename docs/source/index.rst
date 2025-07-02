@@ -81,6 +81,9 @@ Tedee Lock BLE API documentation
 This site contains documentation for Tedee Lock BLE API.
 It aims to help users to integrate custom solutions with Tedee Lock BLE API.
 
+.. note::
+   By using this API, you agree to our `Terms of Use <https://tedee.com/terms-of-use-tedee-apis-and-sdks/>`_.
+
 About Tedee
 -----------
 
